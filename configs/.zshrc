@@ -101,7 +101,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
-alias git_visualize='git log --graph --decorate --oneline'
+alias git-visualize='git log --graph --decorate --oneline'
 alias ohmyzsh="atom ~/.oh-my-zsh"
 alias zshconfig="atom ~/.zshrc"
 alias zshenvconfig='atom ~/.zshenv'

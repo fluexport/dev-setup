@@ -99,6 +99,8 @@ See [cli](cli/README.md).
     $ brew install kubernetes-cli
     # sanity check
     $ kubectl version
+    # enable auto-completion
+    echo "source <(kubectl completion zsh)" >> ~/.zshrc
     ```
 
   - [kubectl aliases](https://github.com/ahmetb/kubectl-aliases)
