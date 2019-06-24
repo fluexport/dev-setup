@@ -1,0 +1,14 @@
+export TTC_SAY_BOX='parrot'
+export TTC_REPOS='/Users/YOUR_USER_NAME/workspace'
+export TTC_REPOS_DEPTH=2
+export TTC_CELSIUS=true
+export TTC_TERMINAL_TITLE=false
+export TTC_BOTS='tinycarebot,selfcare_bot,rShowerThoughts'
+export TTC_APIKEYS=true
+export TTC_CONSUMER_KEY='YOUR_CONSUMER_KEY'
+export TTC_CONSUMER_SECRET='YOUR_CONSUMER_SECRET'
+export TTC_ACCESS_TOKEN='YOUR_ACCESS_TOKEN'
+export TTC_ACCESS_TOKEN_SECRET='YOUR_ACCESS_TOKEN_SECRET'
+export TTC_POMODORO=25
+export TTC_BREAK=10
+export TTC_UPDATE_INTERVAL=5

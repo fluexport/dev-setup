@@ -68,9 +68,12 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git nvm last-working-dir)
 
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/p9k.sh
+source $ZSH/ttc.sh
 source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
 source $ZSH/oh-my-zsh.sh
 
@@ -97,6 +100,15 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="atom ~/.zshrc"
+alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
+alias git_visualize='git log --graph --decorate --oneline'
 alias ohmyzsh="atom ~/.oh-my-zsh"
+alias zshconfig="atom ~/.zshrc"
 alias zshenvconfig='atom ~/.zshenv'
+# kubernetes
+source <(kubectl completion zsh)
+[ -f /Users/flu/.oh-my-zsh/.kubectl_aliases ] && source /Users/flu/.oh-my-zsh/.kubectl_aliases
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

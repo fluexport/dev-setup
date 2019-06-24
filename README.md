@@ -9,6 +9,7 @@ This is a comprehensive walkthrough of my personal dev setup. Feel free to use i
   ```
 
 2. [Python Environment](https://www.python.org/)
+
   ![Python Environment](/assets/img/python_environment_2x.png)
 
   As you can see, there's no right way to do a proper python dev setup.
@@ -27,6 +28,8 @@ This is a comprehensive walkthrough of my personal dev setup. Feel free to use i
     $ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshenv
     $ echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshenv
     $ echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.zshenv
+    # temporary getaround with brew https://github.com/pyenv/pyenv/issues/106
+    $ echo 'alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"' >> ~/.zshrc
     # install python 2.7.16
     $ pyenv install 2.7.16
     # set global/ default python version.
@@ -84,8 +87,25 @@ See [cli](cli/README.md).
 ## Data Specific
 1. [Airflow](https://github.com/flexport/bi-etl): Flexport's bi-etl.
 
-2. [Dagster](https://github.com/dagster-io/dagster):
-  WIP. Playing around with it atm.
+2. [Dagster](https://github.com/dagster-io/dagster): WIP. Playing around with it atm.
+
+3. [Kubernetes](https://kubernetes.io/):
+  - [Docker](https://docs.docker.com/docker-for-mac/install/): container platform.
+
+  - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+
+    ```bash
+    $ brew install kubernetes-cli
+    # sanity check
+    $ kubectl version
+    ```
+
+  - [kubectl aliases](https://github.com/ahmetb/kubectl-aliases)
+    ```bash
+    curl -o $ZSH/.kubectl_aliases https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases
+    echo "[ -f $ZSH/.kubectl_aliases ] && source $ZSH/.kubectl_aliases" >> ~/.zshrc
+    ```
+
 
 3. [awscli](https://docs.aws.amazon.com/cli/latest/userguide/install-macos.html): aws command line interface.
 
@@ -100,8 +120,7 @@ See [cli](cli/README.md).
 
 5. [1Password](https://1password.com/): password management tool.
 
-6. [AppCleaner](https://freemacsoft.net/appcleaner/):
-  App Cleaning tool.
+6. [AppCleaner](https://freemacsoft.net/appcleaner/): App Cleaning tool.
 
 7. [Postman](https://www.getpostman.com/): API dev environment.
 
