@@ -100,13 +100,13 @@ See [cli](cli/README.md).
     # sanity check
     $ kubectl version
     # enable auto-completion
-    echo "source <(kubectl completion zsh)" >> ~/.zshrc
+    $ echo "source <(kubectl completion zsh)" >> ~/.zshrc
     ```
 
   - [kubectl aliases](https://github.com/ahmetb/kubectl-aliases)
     ```bash
-    curl -o $ZSH/.kubectl_aliases https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases
-    echo "[ -f $ZSH/.kubectl_aliases ] && source $ZSH/.kubectl_aliases" >> ~/.zshrc
+    $ curl -o $ZSH/.kubectl_aliases https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases
+    $ echo "[ -f $ZSH/.kubectl_aliases ] && source $ZSH/.kubectl_aliases" >> ~/.zshrc
     ```
 
 
@@ -127,6 +127,6 @@ See [cli](cli/README.md).
 
 7. [Postman](https://www.getpostman.com/): API dev environment.
 
-  ```
+  ```bash
   $ brew cask install postman
   ```
