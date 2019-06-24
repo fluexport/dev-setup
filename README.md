@@ -89,7 +89,8 @@ See [cli](cli/README.md).
 
 2. [Dagster](https://github.com/dagster-io/dagster): WIP. Playing around with it atm.
 
-3. [Kubernetes](https://kubernetes.io/):
+3. [Kubernetes](https://kubernetes.io/): Container orchestration tool.
+
   - [Docker](https://docs.docker.com/docker-for-mac/install/): container platform.
 
   - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
