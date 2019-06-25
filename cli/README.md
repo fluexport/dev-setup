@@ -55,6 +55,8 @@ Personal editor/terminal setup. Mostly zsh theme tools. For `.zshrc` see [config
     $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
     # install npm v11.10.0. node-gyp v3.8.0 breaks with node v12.1.0.
     $ nvm install 11.10.0
+    # upgrade to latest working npm
+    $ nvm install-latest-npm
     # install tcc
     $ npm install -g tiny-care-terminal
     ```
