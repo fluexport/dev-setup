@@ -3,5 +3,5 @@ POWERLEVEL9K_MODE="nerdfont-complete"
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_RPROMPT_ICON_LEFT=true
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir_writable user dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir_writable user dir vcs virtualenv)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time root_indicator background_jobs disk_usage ram time battery)

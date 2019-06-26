@@ -1,12 +1,12 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-eval "$(pyenv init -)"
+
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/flu/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
+# to know which specific one as loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
@@ -78,8 +78,11 @@ source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+export MANPATH="/usr/local/man:$MANPATH"
 
-# export MANPATH="/usr/local/man:$MANPATH"
+# pyenv
+eval "$(pyenv init -)"
+pyenv virtualenvwrapper_lazy
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -103,8 +106,11 @@ source $ZSH/oh-my-zsh.sh
 alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
 alias git-visualize='git log --graph --decorate --oneline'
 alias ohmyzsh="atom ~/.oh-my-zsh"
+alias p9kconfig="atom $ZSH/p9k.sh"
 alias zshconfig="atom ~/.zshrc"
 alias zshenvconfig='atom ~/.zshenv'
+alias deactivate='pyenv deactivate'
+
 # kubernetes
 source <(kubectl completion zsh)
 [ -f /Users/flu/.oh-my-zsh/.kubectl_aliases ] && source /Users/flu/.oh-my-zsh/.kubectl_aliases

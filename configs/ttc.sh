@@ -1,5 +1,5 @@
 export TTC_SAY_BOX='parrot'
-export TTC_REPOS='/Users/YOUR_USER_NAME/workspace'
+export TTC_REPOS='/Users/YOUR_USERNAME/workspace'
 export TTC_REPOS_DEPTH=2
 export TTC_CELSIUS=true
 export TTC_TERMINAL_TITLE=false
