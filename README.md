@@ -145,7 +145,7 @@ This is a comprehensive walkthrough of my personal dev setup. Feel free to use i
     ```
     This creates a `bi-etl` *virtualenv* in `~/.virtualenvs`. You can switch to it by running `workon bi-etl`. You can turn it off by running `deactivate`. Add the `virtualenv` plugin to show the prompt change.
 
-    Check out [virtualenvwrapper](https://github.com/pyenv/pyenv-virtualenvwrapper#usage) for more commands.
+    Check out [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html) for more commands.
 
 3. [git](https://github.com/flexport/flexport)
   - [Generate a new ssh key.](https://help.github.com/en/enterprise/2.15/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
