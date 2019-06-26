@@ -41,7 +41,7 @@ This is a comprehensive walkthrough of my personal dev setup. Feel free to use i
 
   - [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
 
-    Don't contaminate your **global** *Python* install. The following example installs 4 **special** *virtualenvs* for **data science/ data analytics** use case.
+    Don't contaminate your **global** *Python* install. The following example installs 4 **special** *virtualenvs* for **data science**/ **data analytics** use case.
 
     ```bash
     $ brew install pyenv-virtualenv
@@ -129,13 +129,16 @@ This is a comprehensive walkthrough of my personal dev setup. Feel free to use i
     $ mkdir ~/workspace
     $ echo 'export WORKON_HOME=~/.virtualenvs' >> ~/.zshenv
     $ echo 'export PROJECT_HOME=~/workspace' >> ~/.zshenv
+    $ echo 'pyenv virtualenvwrapper_lazy' >> ~/.zshrc
+    # refresh the shell to take effect
+    $ exec $SHELL
     ```
 
     Example of how to link an existing cloned project.
     ```bash
     $ mkvirtualenv -a ~/workspace/bi-etl -p python2 bi-etl
     ```
-    This creates a bi-etl virtualenv in `~/.virtualenvs` and you can switch to it by running `workon bi-etl`.
+    This creates a bi-etl virtualenv in `~/.virtualenvs`. You can switch to it by running `workon bi-etl`. You can turn it off by running `deactivate`. Add the `virtualenv` plugin to show the prompt change.
 
     Check out [virtualenvwrapper](https://github.com/pyenv/pyenv-virtualenvwrapper#usage) for more commands.
 
