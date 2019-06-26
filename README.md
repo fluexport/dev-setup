@@ -137,8 +137,13 @@ This is a comprehensive walkthrough of my personal dev setup. Feel free to use i
     Example of how to link an existing cloned project.
     ```bash
     $ mkvirtualenv -a ~/workspace/bi-etl -p python2 bi-etl
+    # sanity check
+    $ lsvirtualenv
+    bi-etl
+    ======
+
     ```
-    This creates a bi-etl virtualenv in `~/.virtualenvs`. You can switch to it by running `workon bi-etl`. You can turn it off by running `deactivate`. Add the `virtualenv` plugin to show the prompt change.
+    This creates a `bi-etl` *virtualenv* in `~/.virtualenvs`. You can switch to it by running `workon bi-etl`. You can turn it off by running `deactivate`. Add the `virtualenv` plugin to show the prompt change.
 
     Check out [virtualenvwrapper](https://github.com/pyenv/pyenv-virtualenvwrapper#usage) for more commands.
 
