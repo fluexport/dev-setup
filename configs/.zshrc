@@ -109,7 +109,6 @@ alias ohmyzsh="atom ~/.oh-my-zsh"
 alias p9kconfig="atom $ZSH/p9k.sh"
 alias zshconfig="atom ~/.zshrc"
 alias zshenvconfig='atom ~/.zshenv'
-alias deactivate='pyenv deactivate'
 
 # kubernetes
 source <(kubectl completion zsh)

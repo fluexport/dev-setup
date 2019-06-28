@@ -196,6 +196,7 @@ See [cli](cli/README.md).
     ```
 
   - [kubectl aliases](https://github.com/ahmetb/kubectl-aliases)
+
     ```bash
     $ curl -o $ZSH/.kubectl_aliases https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases
     $ echo "[ -f $ZSH/.kubectl_aliases ] && source $ZSH/.kubectl_aliases" >> ~/.zshrc
@@ -203,6 +204,10 @@ See [cli](cli/README.md).
 
 
 3. [awscli](https://docs.aws.amazon.com/cli/latest/userguide/install-macos.html): aws command line interface.
+
+  ```bash
+  $ pip install --upgrade awscli
+  ```
 
 ## Productivity Tools
 1. [Spectacle](https://www.spectacleapp.com/): Window snapping/ reshaping tool.
