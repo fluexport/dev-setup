@@ -17,12 +17,13 @@ Personal editor/terminal setup. Mostly zsh theme tools. For `.zshrc` see [config
 
     ```bash
     $ brew install zsh
+    $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     ```
 
   - [Powerlevel9k](https://github.com/bhilburn/powerlevel9k)
 
     ```bash
-    $ brew tap sambadevi/powerlevel9kf
+    $ brew tap sambadevi/powerlevel9k
     $ brew install powerlevel9k
     $ echo "source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme" >> ~/.zshrc
     ```
