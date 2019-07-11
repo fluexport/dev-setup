@@ -6,7 +6,7 @@ export ZSH="/Users/flu/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one as loaded, run: echo $RANDOM_THEME
+# to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
@@ -30,7 +30,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-export UPDATE_ZSH_DAYS=7
+# export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS=true
@@ -45,7 +45,7 @@ export UPDATE_ZSH_DAYS=7
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -70,11 +70,13 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git nvm last-working-dir)
 
+# more plugins and themes
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/p9k.sh
 source $ZSH/ttc.sh
 source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -107,6 +109,7 @@ alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
 alias git-visualize='git log --graph --decorate --oneline'
 alias ohmyzsh="atom ~/.oh-my-zsh"
 alias p9kconfig="atom $ZSH/p9k.sh"
+alias ttc="tiny-care-terminal"
 alias zshconfig="atom ~/.zshrc"
 alias zshenvconfig='atom ~/.zshenv'
 
@@ -114,7 +117,10 @@ alias zshenvconfig='atom ~/.zshenv'
 source <(kubectl completion zsh)
 [ -f /Users/flu/.oh-my-zsh/.kubectl_aliases ] && source /Users/flu/.oh-my-zsh/.kubectl_aliases
 
-#nvm
+# nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# aws-cli
+source $PYENV_ROOT/versions/3.7.2/bin/aws_zsh_completer.sh

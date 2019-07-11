@@ -176,38 +176,8 @@ This is a comprehensive walkthrough of my personal dev setup. Feel free to use i
 ## Editor/ Terminal
 See [cli](cli/README.md).
 
-## Data Specific
-1. [Airflow](https://github.com/flexport/bi-etl): Flexport's bi-etl.
-
-2. [Dagster](https://github.com/dagster-io/dagster): WIP. Playing around with it atm.
-
-3. [Kubernetes](https://kubernetes.io/): Container orchestration tool.
-
-  - [Docker](https://docs.docker.com/docker-for-mac/install/): container platform.
-
-  - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
-
-    ```bash
-    $ brew install kubernetes-cli
-    # sanity check
-    $ kubectl version
-    # enable auto-completion
-    $ echo "source <(kubectl completion zsh)" >> ~/.zshrc
-    ```
-
-  - [kubectl aliases](https://github.com/ahmetb/kubectl-aliases)
-
-    ```bash
-    $ curl -o $ZSH/.kubectl_aliases https://raw.githubusercontent.com/ahmetb/kubectl-aliases/master/.kubectl_aliases
-    $ echo "[ -f $ZSH/.kubectl_aliases ] && source $ZSH/.kubectl_aliases" >> ~/.zshrc
-    ```
-
-
-3. [awscli](https://docs.aws.amazon.com/cli/latest/userguide/install-macos.html): aws command line interface.
-
-  ```bash
-  $ pip install --upgrade awscli
-  ```
+## Data Eng Specific
+See [data-eng](data-eng/README.md)
 
 ## Productivity Tools
 1. [Spectacle](https://www.spectacleapp.com/): Window snapping/ reshaping tool.
