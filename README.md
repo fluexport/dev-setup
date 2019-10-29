@@ -108,14 +108,14 @@ This is a comprehensive walkthrough of my personal dev setup. Feel free to use i
     * tools3 (set by /Users/YOUR_USERNAME/.pyenv/version)
 
     $ pyenv virtualenvs
-    2.7.16/envs/ipython2 (created from /Users/flu/.pyenv/versions/2.7.16)
-    2.7.16/envs/tools2 (created from /Users/flu/.pyenv/versions/2.7.16)
-    3.7.2/envs/jupyter3 (created from /Users/flu/.pyenv/versions/3.7.2)
-    3.7.2/envs/tools3 (created from /Users/flu/.pyenv/versions/3.7.2)
-    * ipython2 (created from /Users/flu/.pyenv/versions/2.7.16)
-    * jupyter3 (created from /Users/flu/.pyenv/versions/3.7.2)
-    * tools2 (created from /Users/flu/.pyenv/versions/2.7.16)
-    * tools3 (created from /Users/flu/.pyenv/versions/3.7.2)
+    2.7.16/envs/ipython2 (created from /Users/YOUR_USERNAME/.pyenv/versions/2.7.16)
+    2.7.16/envs/tools2 (created from /Users/YOUR_USERNAME/.pyenv/versions/2.7.16)
+    3.7.2/envs/jupyter3 (created from /Users/YOUR_USERNAME/.pyenv/versions/3.7.2)
+    3.7.2/envs/tools3 (created from /Users/YOUR_USERNAME/.pyenv/versions/3.7.2)
+    * ipython2 (created from /Users/YOUR_USERNAME/.pyenv/versions/2.7.16)
+    * jupyter3 (created from /Users/YOUR_USERNAME/.pyenv/versions/3.7.2)
+    * tools2 (created from /Users/YOUR_USERNAME/.pyenv/versions/2.7.16)
+    * tools3 (created from /Users/YOUR_USERNAME/.pyenv/versions/3.7.2)
     ```
     Check out [virtualenv](https://github.com/pyenv/pyenv-virtualenv#usage) for more commands.
 
@@ -147,7 +147,23 @@ This is a comprehensive walkthrough of my personal dev setup. Feel free to use i
 
     Check out [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html) for more commands.
 
-3. [git](https://github.com/flexport/flexport)
+  - **TL;DR**
+    ```bash
+    $ brew install pyenv
+    $ pyenv install 2.7.16
+    $ pyenv global 2.7.16
+    $ brew install pyenv-virtualenvwrapper
+    ```
+    In your `.bash_profile` or `.zshrc` it should have
+    ```bash
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
+    export WORKON_HOME=~/.virtualenv
+    export PROJECT_HOME=~/workspace
+    pyenv virtualenvwrapper_lazy
+    ```
+      3. [git](https://github.com/flexport/flexport)
   - [Generate a new ssh key.](https://help.github.com/en/enterprise/2.15/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
     ```bash
     # generate public/private key pair
