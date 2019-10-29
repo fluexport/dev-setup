@@ -163,7 +163,7 @@ This is a comprehensive walkthrough of my personal dev setup. Feel free to use i
     export PROJECT_HOME=~/workspace
     pyenv virtualenvwrapper_lazy
     ```
-      3. [git](https://github.com/flexport/flexport)
+3. [git](https://github.com/flexport/flexport)
   - [Generate a new ssh key.](https://help.github.com/en/enterprise/2.15/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
     ```bash
     # generate public/private key pair
