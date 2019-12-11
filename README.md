@@ -14,7 +14,7 @@ This is a comprehensive walkthrough of my personal dev setup. Feel free to use i
 
   As you can see, there's no right way to do a proper python dev setup.🤷‍
 
-  🌟 This is my **best attempt** to have a squeaky clean/ bare minimum python dev environment for data-specific roles. 🤷‍
+  🌟 This is my **best attempt** to have a squeaky clean/ bare minimum python dev environment for data-specific roles. 🌟
 
   1. I use *pyenv* to install Python interpreters.
 
