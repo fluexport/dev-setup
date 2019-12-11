@@ -113,6 +113,23 @@ alias ttc="tiny-care-terminal"
 alias zshconfig="atom ~/.zshrc"
 alias zshenvconfig='atom ~/.zshenv'
 
+# postgres
+alias pg-start="launchctl load ~/Library/LaunchAgents"
+alias pg-stop="launchctl unload ~/Library/LaunchAgents"
+alias pg-status="pg_ctl status -D /usr/local/var/postgres/"
+
+# databases
+alias bi-master='psql -h bi-master.flxt-data.com -U bi_etl_user -d flexport_bi'
+alias bi-slave='psql -h bi-reporting.flxt-data.com -U bi_etl_user -d flexport_bi'
+alias bi-api='psql -h bi-reporting.flxt-data.com -U prediction_service -d flexport_bi'
+alias doc-ex='psql -h document-extraction.flxt-data.com -p 5432 -d document_extraction -U document_extraction_user'
+alias core-slave='psql -h core-etl.flxt-data.com  -U periscope -d flexport_production'
+alias redshift='psql -h redshift.flxt-data.com -p 5439 -d datawarehouse -U bi_etl_user'
+alias airflowdb='psql -h airflow.flxt-data.com -p 5432 -d postgres -U postgres'
+alias boomi-master='psql -h boomi-master.flxt-data.com -p 5432 -d boomi_prod -U bi_etl_user'
+alias boomi-reporting='psql -h boomi-master.flxt-data.com -p 5432 -d boomi_prod -U bi_report_user'
+alias buildkite='psql -h buildkite-data-eng.flxt-data.com -p 5432 -d data_eng -U bi_etl_user'
+
 # kubernetes
 source <(kubectl completion zsh)
 [ -f /Users/flu/.oh-my-zsh/.kubectl_aliases ] && source /Users/flu/.oh-my-zsh/.kubectl_aliases
