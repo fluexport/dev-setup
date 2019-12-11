@@ -23,10 +23,10 @@ This is a comprehensive walkthrough of my personal dev setup. Feel free to use i
   3. I use *pyenv-virtualenvwrapper* to work on projects.
 
   Simply run
-  ```setup
-  $ sh setup/pyenv_setup.sh
+  ```bash
+  $ sh scripts/pyenv_setup.sh
   ```
-  If you want a more in-depth explanation, read [here](setup/README.md).
+  If you want a more in-depth explanation, read [here](scripts/README.md).
 
 3. [git](https://github.com/flexport/flexport)
   - [Generate a new ssh key.](https://help.github.com/en/enterprise/2.15/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
